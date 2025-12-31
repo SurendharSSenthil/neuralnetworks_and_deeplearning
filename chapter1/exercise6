@@ -1,0 +1,9 @@
+question: In online learning, a neural network learns from just one training input at a time (just as human beings do). Name one advantage and one disadvantage of online learning, compared to stochastic gradient descent with a mini-batch size of, say, 20.
+
+Advantage:
+It adapts extremely fast.
+Because the weights are updated after every example, the network can start improving almost instantly and can track changing data distributions in real time. 
+
+Disadvantage:
+The updates are very noisy.
+A single training example gives a poor estimate of the true gradient, so parameter updates jitter and can bounce around instead of moving smoothly toward a minimum.
